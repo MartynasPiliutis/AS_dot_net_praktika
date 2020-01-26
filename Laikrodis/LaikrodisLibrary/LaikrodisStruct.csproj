@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20236F05-3FB6-4D58-B627-FBB1A7CFDC62}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Laikrodis</RootNamespace>
-    <AssemblyName>Laikrodis</AssemblyName>
+    <ProjectGuid>{B6C2CAF5-E543-48DA-AC2D-12F5FC77AE8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LaikrodisLibrary</RootNamespace>
+    <AssemblyName>LaikrodisLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,25 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Clock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\KampoSkaiciavimas\KampoSkaiciavimas.csproj">
-      <Project>{2420f107-a696-4ed5-9c8a-ad51d456f249}</Project>
-      <Name>KampoSkaiciavimas</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LaikoIvestis\LaikoIvestis.csproj">
-      <Project>{daec3f24-f006-4d6c-9cf9-1f6ce52c29e8}</Project>
-      <Name>LaikoIvestis</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LaikrodisLibrary\LaikrodisStruct.csproj">
-      <Project>{b6c2caf5-e543-48da-ac2d-12f5fc77ae8b}</Project>
-      <Name>LaikrodisStruct</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
