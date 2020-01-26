@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LaikrodisKampas\LaikrodisKampas.csproj">
+      <Project>{6e01566d-07d6-47a5-9ff6-57fe605aee51}</Project>
+      <Name>LaikrodisKampas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LaikrodisStruktura\LaikrodisStruktura.csproj">
+      <Project>{cd655a61-6643-481e-831f-c80f96bd64e1}</Project>
+      <Name>LaikrodisStruktura</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LaikrodisTimeSet\LaikrodisTimeSet.csproj">
+      <Project>{28030b75-e84a-4c42-9d1e-6192e164e1ed}</Project>
+      <Name>LaikrodisTimeSet</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

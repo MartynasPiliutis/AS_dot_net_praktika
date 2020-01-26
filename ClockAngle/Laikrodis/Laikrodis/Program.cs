@@ -10,6 +10,9 @@ namespace Laikrodis
     {
         static void Main(string[] args)
         {
+            Laikrodis IvestasLaikas = LaikrodisTimeSet.PaimaVartotojoIvestaLaikaIrParodoKonsoleje();
+            LaikrodisKampas.PaskaiciuojaKampaTarpRodykliuIrIsvedaIKonsole(IvestasLaikas.Valandos, IvestasLaikas.Minutes);
+            Console.ReadLine();
         }
     }
 }
