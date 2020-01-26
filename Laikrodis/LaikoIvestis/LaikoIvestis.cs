@@ -12,7 +12,7 @@ namespace Laikrodis
         public static void PaimaVartotojoIvestaLaikaIrParodoIvestaLaika(out int minutes, out int valandos)
         {
             Console.Write("Iveskite valandas: ");
-            bool successValandos = Int32.TryParse(Console.ReadLine(), out valandos);
+            bool successValandos = int.TryParse(Console.ReadLine(), out valandos);
             if (!successValandos)
             {
                 Console.WriteLine("Neteisingai pateiktos arba nepateiktos valandos...");
@@ -28,7 +28,7 @@ namespace Laikrodis
                 Environment.Exit(0);
             }
             Console.Write("Iveskite minutes: ");
-            bool successMinutes = Int32.TryParse(Console.ReadLine(), out minutes);
+            bool successMinutes = int.TryParse(Console.ReadLine(), out minutes);
             if (!successMinutes)
             {
                 Console.WriteLine("Neteisingai pateiktos arba nepateiktos minutes...");
