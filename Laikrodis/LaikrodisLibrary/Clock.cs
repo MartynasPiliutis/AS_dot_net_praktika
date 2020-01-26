@@ -20,12 +20,12 @@ namespace Laikrodis
             get { return _mins; }
             set { _mins = value; }
         }
-
-        public static void PriskiriameLaikaStrukturai(int minutes, int valandos)
+        public static Valandos NaujasisLaikasIvedamasIStruktura(int minutes, int valandos)
         {
             Valandos NaujasLaikas = new Valandos();
             NaujasLaikas.LaikasValandos = valandos;
             NaujasLaikas.LaikasMinutes = minutes;
+            return NaujasLaikas;
         }
     }
 }

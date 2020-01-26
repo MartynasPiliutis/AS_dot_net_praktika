@@ -44,5 +44,11 @@
     <Compile Include="KampoSkaiciavimas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LaikrodisLibrary\LaikrodisStruct.csproj">
+      <Project>{b6c2caf5-e543-48da-ac2d-12f5fc77ae8b}</Project>
+      <Name>LaikrodisStruct</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

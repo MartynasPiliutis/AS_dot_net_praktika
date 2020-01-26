@@ -9,7 +9,7 @@ namespace Laikrodis
 {
     public struct LaikoIvestis
     {
-        public static void PaimaVartotojoIvestaLaika(out int minutes, out int valandos)
+        public static void PaimaVartotojoIvestaLaikaIrParodoIvestaLaika(out int minutes, out int valandos)
         {
             Console.Write("Iveskite valandas: ");
             bool successValandos = Int32.TryParse(Console.ReadLine(), out valandos);

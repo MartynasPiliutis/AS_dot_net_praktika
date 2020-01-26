@@ -8,7 +8,7 @@ namespace Laikrodis
 {
     public struct KampoSkaiciavimas
     {
-        public static void PaskaiciuojaIrIsvedaIKonsoleKampaTarpRodykliu(int minutes, int valandos)
+        public static void PaskaiciuojaKampaTarpRodykliuIrIsvedaIKonsole(int minutes, int valandos)
         {
             double kampas;
             char deg = Convert.ToChar(176);

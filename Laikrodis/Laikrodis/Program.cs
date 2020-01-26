@@ -12,9 +12,9 @@ namespace Laikrodis
     {
         static void Main(string[] args)
         {
-            LaikoIvestis.PaimaVartotojoIvestaLaika(out int minutes, out int valandos);
-            Valandos.PriskiriameLaikaStrukturai(minutes, valandos);
-            KampoSkaiciavimas.PaskaiciuojaIrIsvedaIKonsoleKampaTarpRodykliu(minutes, valandos);
+            LaikoIvestis.PaimaVartotojoIvestaLaikaIrParodoIvestaLaika(out int minutes, out int valandos);
+            Valandos NaujasLaikas = Valandos.NaujasisLaikasIvedamasIStruktura(minutes, valandos);
+            KampoSkaiciavimas.PaskaiciuojaKampaTarpRodykliuIrIsvedaIKonsole(NaujasLaikas.LaikasMinutes, NaujasLaikas.LaikasValandos);
             Console.ReadLine();
         }
     }
