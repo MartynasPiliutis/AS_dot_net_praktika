@@ -69,7 +69,7 @@ namespace Medis
             saka11100.sakos.Add(saka111001);
             saka111001.sakos.Add(saka1110010);
            
-            Console.WriteLine($"Didziausias medzio gylis: {RekursiskaiPaskaiciuojaDidziausiaMedzioGyli(saka0.sakos, 1)}");
+            Console.WriteLine($"Didziausias medzio gylis yra {RekursiskaiPaskaiciuojaDidziausiaMedzioGyli(saka0.sakos, 1)}");
             Console.ReadLine();
         }
 
