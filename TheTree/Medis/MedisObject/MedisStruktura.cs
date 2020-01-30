@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Medis
 {
-    class Program
+    class Saka
     {
-        static void Main(string[] args)
-        {
-            List<Array> shakos = new List<Array>();
-        }
+        List<Saka> sakos;
+        
     }
 }
